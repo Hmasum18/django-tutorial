@@ -1,0 +1,22 @@
+{% extends 'oracletest/base.html' %}
+
+{% block body %}
+<div class="container">
+    <div class="row align-items-center">
+        {% for e in employeeList %}
+        <div class="col-6">
+            <div class="card text-white bg-dark mb-3" >
+                <div class="card-body">
+                    <h5 class="card-title">{{e.first_name}} {{e.last_name}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">ID: {{e.employee_id}}</h6>
+                    <p class="card-subtitle">Email: {{e.email}}</p>
+                    <p class="card-subtitle">Phone: {{e.phone_number}}</p>
+                    <p class="card-subtitle">Join date: {{e.hire_date}}</p>
+                    <p class="card-subtitle">Job: {{e.job.job_title}}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor%}
+    </div>
+</div>
+{% endblock %}

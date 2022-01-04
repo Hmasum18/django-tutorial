@@ -1,0 +1,56 @@
+
+#logo {
+  width: 60%;
+}
+
+#search_form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%,-80%); /*translate %50 left of form width*/
+}
+/* press ctrl+/ for comment */
+/* #search_box:focus{
+    border: 1px solid #ccc;
+} */
+
+#search_box {
+   /* to remove the the outline box while input something */
+  outline: 0;
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  width: 500px;
+  height: 40px;
+  background-image: url(web-search-icon.png)  ;
+  background-repeat: no-repeat;
+  background-size: 25px 27px;
+  background-position: 12px ;
+  padding: 12px 12px 12px 40px;
+}
+#search_box:hover {
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+}
+
+.form_btn {
+  margin: 10px;
+  width: 125px;
+  height: 35px;
+  border: 0px;
+  border-radius: 3px;
+  outline: 0px;
+}
+.form_btn:hover{
+  border: 1px solid #ccc;
+}
+
+.form_btn:focus,select {
+  border: 1px solid blue;
+}
+
+#other_link {
+  position: absolute;
+  left: 90%;
+  outline: 0;
+}

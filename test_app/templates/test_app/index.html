@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="{% static 'index.css' %}" />
+    </head>
+    <body id="root">
+      <div id="search_form">
+        <img id="logo" src="/static/google_bangladesh_logo.png" />
+       <!-- <img id="logo" src="{% static 'google_bangladesh_logo.png' %}" /> -->
+        <form action="https://google.com/search">
+            <input id="search_box" type="text" name="q">
+            <br />
+            <input class="form_btn" type="submit" value="Google Search">
+            <input   class="form_btn" type="submit" value="I'm Feeling Lucky" formaction="https://www.google.com/doodles/">
+        </form>
+      </div>
+
+      <div id="other_link">
+        <a href="image_search.html" >Images</a>
+      </div>
+
+    </body>
+</html>

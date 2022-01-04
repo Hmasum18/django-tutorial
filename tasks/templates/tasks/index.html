@@ -1,0 +1,15 @@
+{% extends "tasks/layout.html" %}
+
+{% block body_block %}
+    <h1>Tasks list</h1>
+    <ul>
+        {% for task in task_list %}
+            <li>{{ task }}</li>
+        {% empty %}
+            <li>no tasks</li>
+        {% endfor %}
+    </ul>
+ {#add is the name of the url we gave is urls.py#}
+    <a href="{%  url 'tasks:add' %}">Add a new task</a>
+ {% comment %}   <a href="/tasks/add_task">Add task</a>{% endcomment %}
+{% endblock %}
